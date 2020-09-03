@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example</title>
+</head>
+
+<body>
+    <script>
+        // ax + b = 0
+        // input , a, b 
+        // x = ?
+        var a, b , x;
+        a = parseInt(prompt("nhap vao so a: "));
+        b = parseInt(prompt("nhap vao so b: "));
+
+        // xu li 
+        // a = 0 ; b = 0 phuong trinh co vo nghiem 
+        // a = 0 ; b != 0 phuong trinh vo nghiem
+        // a != 0 b = 0; x = 0/a x = 0
+        // a != 0 ; b!=0 x = -b/a;
+        if (a == 0 && b == 0) {
+            console.log("phuong trinh co vo so nghiem");
+        } else if(a == 0  && b != 0){
+            console.log("phuong trinh vo nghiem ")
+        } else if(a != 0 && b == 0){
+            x = 0;
+            console.log(x);
+        } else {
+            x = -b/a
+            console.log("phuong trinh co nghiem la ", x);
+        }
+
+
+
+    </script>
+</body>
+
+</html>
